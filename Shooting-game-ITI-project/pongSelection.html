@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pingPong</title>
+    <link rel="icon" href="assets\imgs\team_logo_1.png"> <link>
+    <link rel="stylesheet" href="main_pages.css"> 
+    <link rel="stylesheet" href="gameMain.css"> 
+</head>
+<body>
+
+    <!-- controls background audio -->
+    <div>
+            <img onclick="playAudio()" id='playBkMusicbtn' src="assets\imgs\play_icon.png">
+            <img onclick="pauseAudio()" id="muteBkMusicbtn" src="assets\imgs\pause_icon.png" >
+    </div>
+
+    <!-- Games play -->
+    <div align = 'center'>
+        <img onclick="location.href='pingPong.html'" id='policeSniperPlay'  src="assets/imgs/pong.PNG" alt="">
+        <div>
+        <img  id='policeSniperText'  src="assets\imgs\play.gif" alt="">
+    </div>
+
+    </div>
+    
+    <!-- main button  -->
+    <div  class="center_btn" align = 'center' >
+        <button onclick="location.href='select_game.html'" class="mainbtn" >Back</button>
+        <button  class="mainbtn" id='howToPlay' >How to play</button>
+        
+     </div>
+
+     <!-- story popup -->
+    <div id="storyPupUp" class="pupUpBackGround">
+        <form class="pupUpContent animate">
+            <div class="imgcontainer">
+                <span onclick="pauseAudio1() ; playAudio()" id="close2" class="close" title="Close PopUp">&times;</span>
+            <img id='prev' src="assets//story//left.png"> <img id="storyimg"src="assets//story//scene0.jpg"> <img id='next' src="assets//story//right.png">
+            <p id="pa1" >Villa Restal is here in Gotham city </p>
+
+            </div> 
+        </form>
+    </div>
+    
+     <!-- how to play popup -->
+    <div id="howToPlayPupUp" class="pupUpBackGround">
+        <form class="pupUpContent animate">
+            <div class="imgcontainer">
+                <span id="close" class="close" title="Close PopUp">&times;</span>
+                <img src="assets\imgs\team_logo_1.png" alt="Logo" class="avatar">
+                <p>use the keyboard up and down arrow keys to move the paddle </p>
+                <p><b>Be careful</b><br>If you hit the ball by the upper part ,it will move up <br>
+                If you hit the ball with the lower part, it will move down  </p>
+            </div>
+        </form>
+    </div>
+    
+    
+
+    <!-- background audio src -->
+    <audio id="bkAduio" loop="true">
+            <source src="assets\audio\012.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+            
+
+    <!-- backGround audio script -->
+    <script>
+            var x = document.getElementById("bkAduio"); 
+            x.play();
+            function playAudio() { 
+            x.play(); 
+            } 
+
+            function pauseAudio() { 
+            x.pause(); 
+            } 
+            </script>  
+
+    <!-- story audio src -->
+    <audio id="storyAudio" loop="true">
+        <source src="assets\audio\story.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+        
+    <!-- story audio script -->
+     <script>
+        var x1 = document.getElementById("storyAudio"); 
+        // x1.play();
+        function playAudio1() { 
+        x1.play(); 
+        } 
+
+        function pauseAudio1() { 
+        x1.pause(); 
+        } 
+        </script>
+        <!-- Script File -->
+    <script src="police_sniper.js"></script>
+    <script src="storySlideShow.js"></script>
+</body>
+</html>

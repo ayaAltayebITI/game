@@ -1,0 +1,243 @@
+body
+{ 
+	background-image: url("assets\\imgs\\background_3.gif");	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	border-radius: 25px;
+
+}
+
+.gamePage {
+    
+	background-image: url("assets\\imgs\\gamebackgnd.jpg");	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-size:100vw 100%;
+    background-position:absolute;
+    margin:0;
+    /* https://www.youtube.com/watch?v=n-AuSopUl6s     
+    due to this tutorial png ,jpg cursors arenot supported */
+    /* background-size: 100%; */
+}
+.center_logo {
+   width: 20%;
+   height: 20%;
+}
+.center_btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+}
+.mainbtn {
+	text-align: center;
+	font-size: 24px;
+	box-shadow: 0 5px 7px 0 rgba(231, 211, 211, 0.2), 0 2px 7px 0 rgba(179, 157, 157, 0.19);
+	font-weight: bold;
+	margin-left: 10px;
+	width: 300px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: rgb(102, 33, 20);
+	border: black;
+	box-shadow: 25px;
+	color: rgb(14, 6, 6);
+	cursor: pointer;
+	outline: none;
+}
+.mainbtn:active { box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); font-size: 30px;}
+.mainbtn:hover {box-shadow: 0 5px 16px 0 rgba(181, 235, 111, 0.2), 0 2px 20px 0 rgba(179, 157, 157, 0.19);
+}
+
+img#playBkMusicbtn , img#muteBkMusicbtn {
+	border: none;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+button#backBtn {
+	/* margin: 250px 0px 0px 20px; */
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+
+}
+img#policeSniper ,img#policeSniperPlay,img#pong {
+	width: 15%;
+   height: 15%;
+   margin-top: 200px;
+}
+div#policeSniperPageBtn{
+  position: fixed;
+  bottom: 20px;
+  left: 400px;;
+
+}
+img#policeSniper:hover , img#policeSniperPlay:hover,img#pong:hover {
+	 width: 16%;
+	height: 16%;}
+
+img#policeSniperText {
+	margin-top: 0px;
+}
+
+/* /////////////////////////////// */
+
+/* PopUp Styling  */
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 100px;
+	height:150px;
+}
+
+/* pupup Content Box */
+.pupUpContent {
+    background-color: #ec7878;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 30%; 
+    opacity: .8;
+    border-radius: 2%;
+}
+
+/* The PupUp(background) */
+.pupUpBackGround {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+div#welcomePupUp {
+    display:block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* End of PopUp styling */
+/* ////////////////////////////////////// */
+.bdgs {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.char {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    
+}
+
+.char:hover {
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: 1;
+}
+
+.charPopUp {
+    background-color:rgba(0,0,0,0.4);
+    margin: 4% auto 5% auto;
+    border: 1px solid #888;
+    width: 30%;
+    height: 750px;
+    border-radius: 5%;
+    
+}
+h1
+{
+    background-color: rgba(61, 161, 161, 0.4);
+    margin-top: 50px;
+}
+
+input {
+    text-align: center;
+    width: 220px;
+    height: 30px;
+    margin-top: 40px;
+    border:2px solid #456879;
+    border-radius:10px;
+	outline: none;
+    
+	
+}
+
+#playNow , #tryAgain {
+    text-align: center;
+	font-size: 15px;
+	box-shadow: 0 5px 7px 0 rgba(231, 211, 211, 0.2), 0 2px 7px 0 rgba(179, 157, 157, 0.19);
+	font-weight: bold;
+    margin-left: 10px;
+    margin-top: 15px;
+	width: 100px;
+	height: 30px;
+	border-radius: 8px;
+	background-color: rgb(102, 33, 20,.5);
+	border: black;
+	box-shadow: 25px;
+	color: rgb(14, 6, 6);
+	cursor: pointer;
+	outline: none;
+}
+#lossForm ,#winForm {
+    width: 25%;
+    height: 610px;
+}
+
+#winPopUp{
+    background-image: url(assets\\imgs\\fireworks.png);
+    background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 30vw;
+}
+
+#lossPopUp{
+    background-image: url(assets\\imgs\\gameover.jpg);
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 30vw;
+}
